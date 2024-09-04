@@ -1,0 +1,155 @@
+
+/* styles/globals.css */
+@import "@fontsource/roboto"; /* 기본적으로 모든 폰트 웨이트와 스타일이 포함됩니다 */
+@import 'pretendard/dist/web/static/pretendard.css';
+
+
+*{
+  box-sizing: border-box;
+}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,button {
+  margin: 0;
+  padding: 0;
+}
+
+fieldset,img {
+  border: 0 none
+}
+
+dl,ul,ol,menu,li {
+  list-style: none
+}
+
+blockquote,q {
+  quotes: none
+}
+
+blockquote:before,blockquote:after,q:before,q:after {
+  content: "";
+  content: none
+}
+
+input,select,textarea,button {
+  vertical-align: middle
+}
+
+input::-ms-clear {
+  display: none
+}
+
+button {
+  border: 0 none;
+  background-color: transparent;
+  cursor: pointer
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+  cursor: pointer
+}
+a:active,a:hover {
+  text-decoration: none
+}
+a:active {}
+
+address,caption,cite,code,dfn,em,var {
+  font-style: normal;
+  font-weight: 400
+}
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,button{}
+
+// 추가적인 Sass 스타일
+body {
+  font-family: 'Roboto', 'Pretendard';
+  background-color: rgb(250,251,254);
+}
+
+.leftside-menu{
+  background-color: #313a46;
+  width: 260px;
+  padding-top: 70px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+#leftside-menu-cotanienr{
+  height: 100%;
+}
+
+.logo{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 260px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px rgba(255,255,255,0.2) solid;
+}
+
+.side-nav-link{
+  color: #cedce4;
+  display: block;
+  padding: 10px 30px;
+  font-size: .895rem;
+  position: relative;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  list-style: none;
+}
+
+.side-nav-third{
+  a{
+    padding: 8px 30px 8px 80px;
+    color:#8391a2;
+    display: block;
+    position: relative;
+    -webkit-transition: all .4s;
+    transition: all .4s;
+    font-size: .8rem;
+  }
+}
+
+.content-page{
+  margin-left: 260px;
+  overflow: hidden;
+  padding: 70px 12px 65px;
+  min-height: 100vh;
+}
+
+
+.navbar-custom{
+  padding: 0 24px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 35px 0 rgba(154, 161, 171, .15);
+  box-shadow: 0 0 35px 0 rgba(154, 161, 171, .15);
+  min-height: 70px;
+  position: fixed;
+  left: 260px;
+  top: 0;
+  right: 0;
+  z-index: 1001;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.page-title{
+  font-size: 18px;
+  margin: 0;
+  line-height: 75px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: inherit;
+}
+
+.table{
+  th{
+    padding: .95rem;
+  }
+}
